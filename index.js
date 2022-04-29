@@ -1,6 +1,6 @@
 const { Telegraf } = require('telegraf')
 const { BOT_TOKEN } = require('./config');
-const bot = new Telegraf(BOT_TOKEN)
+const bot = new Telegraf('5391447523:AAG3afxruTgw-aRx5Y2cC1eycuLNRc5Lq_4')
 // let greetingPhrases = ['HEY', "HELLO", 'HI', 'HI THERE', "HOW ARE YOU?", 'YO', "WHAT'S UP", "WADDUP", "SUP"];
 let memeCaption;
 let memeId;
