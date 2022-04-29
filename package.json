@@ -1,0 +1,19 @@
+{
+  "name": "auto-post",
+  "version": "1.0.0",
+  "description": "a telegram auto poster",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Donimizer",
+  "license": "ISC",
+  "dependencies": {
+    "telegraf": "^4.7.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
