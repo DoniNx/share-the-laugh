@@ -1,58 +1,13 @@
 const { Telegraf } = require('telegraf')
 const bot = new Telegraf('5391447523:AAG3afxruTgw-aRx5Y2cC1eycuLNRc5Lq_4')
-// let greetingPhrases = ['HEY', "HELLO", 'HI', 'HI THERE', "HOW ARE YOU?", 'YO', "WHAT'S UP", "WADDUP", "SUP"];
+
 let memeCaption;
 let memeId;
 
 
-
-
-// bot.start((ctx) => ctx.reply('Hellllooo 😎, user /post to post your meme'))
 bot.help((ctx) => ctx.reply('a guide on how to send memes'))
 
-// bot.command('post', async (ctx) => {
-//         ctx.reply('Send the video clip or an image file')
-//         await bot.on('photo', (ctx)=>{
-//             setTimeout(() => {
-//                 memeId = ctx.message.photo.pop();
-//                 ctx.reply('Cool')
 
-//             }, 700);
-
-//             setTimeout(async () => {
-//             ctx.reply('Add a caption now')
-
-//             await bot.on('text', (ctx)=>{
-//                     memeCaption = ctx.message.text;
-//                     ctx.reply("Shits done 👍");
-
-//                     setTimeout(() => {
-//                         ctx.replyWithMediaGroup([{
-//                             media: `${memeId.file_id}`,
-//                             caption: `${memeCaption} \n \n --------------------- \n @STL2_bot`,
-//                             type: 'photo'
-//                           }],)
-                        
-//                         ctx.telegram.sendMediaGroup( 604247733, [ {
-//                             media: `${memeId.file_id}`,
-//                             caption: `${memeCaption} \n \n --------------------- \n @STL2_bot`,
-//                             type: 'photo'
-//                           }]).then(function(){
-//                             console.log("mesage forwaded")
-//                             });
-                            
-        
-//                     }, 700);
-                    
-//                 }); 
-//             }, 1300);
-
-
-//         });    
-
-       
-
-// })
 
  bot.start(async(ctx)=>{
     ctx.reply('Forward the meme sucker')
@@ -89,8 +44,6 @@ bot.help((ctx) => ctx.reply('a guide on how to send memes'))
 });
 
 // utils
-
-
 function removePromo(text){
     const string = '^@';
     const regexp = new RegExp(string);
