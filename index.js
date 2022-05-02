@@ -1,5 +1,5 @@
 const { Telegraf } = require('telegraf')
-const bot = new Telegraf('5391447523:AAG3afxruTgw-aRx5Y2cC1eycuLNRc5Lq_4')
+const bot = new Telegraf('xxxx')
 
 let memeCaption;
 let memeId;
